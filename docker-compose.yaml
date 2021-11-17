@@ -11,5 +11,9 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=pass
       - MYSQL_DATABASE=test
+  memcached:
+    image: "memcached"
+    ports:
+      - "11211:11211"
 
 
